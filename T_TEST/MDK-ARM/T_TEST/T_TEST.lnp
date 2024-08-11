@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"t_test\startup_stm32f103xb.o"
+"t_test\main.o"
+"t_test\stm32f1xx_it.o"
+"t_test\stm32f1xx_hal_msp.o"
+"t_test\stm32f1xx_hal_gpio_ex.o"
+"t_test\stm32f1xx_hal_adc.o"
+"t_test\stm32f1xx_hal_adc_ex.o"
+"t_test\stm32f1xx_hal.o"
+"t_test\stm32f1xx_hal_rcc.o"
+"t_test\stm32f1xx_hal_rcc_ex.o"
+"t_test\stm32f1xx_hal_gpio.o"
+"t_test\stm32f1xx_hal_dma.o"
+"t_test\stm32f1xx_hal_cortex.o"
+"t_test\stm32f1xx_hal_pwr.o"
+"t_test\stm32f1xx_hal_flash.o"
+"t_test\stm32f1xx_hal_flash_ex.o"
+"t_test\stm32f1xx_hal_exti.o"
+"t_test\stm32f1xx_hal_tim.o"
+"t_test\stm32f1xx_hal_tim_ex.o"
+"t_test\stm32f1xx_hal_uart.o"
+"t_test\system_stm32f1xx.o"
+--strict --scatter "T_TEST\T_TEST.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "T_TEST.map" -o T_TEST\T_TEST.axf
